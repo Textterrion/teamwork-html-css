@@ -26,6 +26,7 @@ input::placeholder {
 
 :root {
   --font-family: "Quicksand", sans-serif;
+  --font-family-secondery: "Aboreto", system-ui;
   --color-scheme-1-background: var(--color-coffee-lighter);
   --color-neutral-darkest: #0b0803;
   --color-scheme-1-border: var(--opacity-neutral-darkest-15);
@@ -69,6 +70,15 @@ input::placeholder {
   --color-scheme-2-accent: var(--color-neutral-darkest);
   --color-scheme-2-foreground: var(--color-coffee);
   --color-error-red: #7f1c1c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-secondery);
 }
 
 .btn {
