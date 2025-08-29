@@ -104,6 +104,9 @@ h6 {
 }
 
 .input-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 12px;
   min-height: 40px;
   border: 1px solid var(--opacity-neutral-darkest-15);
