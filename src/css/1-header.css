@@ -21,6 +21,11 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  .header-nav-logo {
+    padding: 18px 16px;
+  }
+
   .header-nav-list {
     display: flex;
     flex-direction: row;
