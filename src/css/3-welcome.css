@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     max-width: 288px;
-    margin-bottom: 32px;
 }
 
 .welcome-keyword {
@@ -19,27 +18,27 @@
     margin-bottom: 32px;
 }
 
+
 .welcome-text {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 32px;
+    
 }
 
-.welcome-button {
-    border-radius: 100px;
-    padding: 10px 24px;
+.btn {
     width: 288px;
     height: 44px;
+    margin-bottom: 32px;
+}
+
+.btn-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
     color: #fff;
-    background-color: #6f4e37;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    gap: 12px;
-    box-shadow: 0 1px 2px 0 var(--opacity-neutral-darkest-5), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px var(--opacity-neutral-darkest-15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 var(--opacity-white-5);
+    margin-right: 12px;
 }
 
 .welcome-icons {
@@ -60,7 +59,7 @@
         max-width: 704px;
     }
 
-    .welcome-button {
+    .btn {
         max-width: 181px;
     }
 
@@ -78,7 +77,7 @@
     }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1140рх) {
     .welcome-contant {
         max-width: 1312px;
     }
@@ -97,13 +96,5 @@
 
     .welcome-picture img {
         max-width: 1312px;
-    }
-
-    .welcome-button:hover {
-        opacity: 0.5;
-    }
-
-    .welcome-button:focus {
-        background-color: #6f4e37;
     }
 }
