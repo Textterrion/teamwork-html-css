@@ -16,9 +16,6 @@
   pointer-events: auto;
 }
 
-.mobile-container {
-}
-
 .icon-and-button {
   display: flex;
   justify-content: space-between;
