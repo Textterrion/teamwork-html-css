@@ -1,0 +1,106 @@
+.hero-container{
+    min-width: 320px;
+    background-image: image-set(
+        url(../img/2-hero/mob-hero.webp) 1x,
+        url(../img/2-hero/mob-hero@2x.webp) 2x
+    );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px 32px;
+    width: 320px;
+    height: 644px;
+}
+.hero-title{
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 108px;
+    padding-bottom: 24px;
+}
+.hero-text{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+}
+.hero-btn{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 135px;
+    height: 44px;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    background: #6f4e37;
+}
+.hero-btn:hover{
+    opacity: 0.5;
+}
+.hero-btn:focus{
+    background: rgba(11, 8, 3, 0.1);
+}
+@media screen and (min-width:768px){
+    .hero-container{
+        background-image: image-set(
+            url(../img/2-hero/tab-hero.webp) 1x,
+            url(../img/2-hero/tab-hero@2x.webp) 2x
+        );
+        width: 100%;
+        height: 900px;
+    }
+    .hero-title{
+        margin-left: 32px;
+        padding-top: 312px;
+        width: 516px;
+    }
+    .hero-text{
+        margin-left: 32px;
+        width: 560px;
+    }
+    .hero-btn{
+        margin-left: 32px;
+    }
+}
+@media screen and (min-width:1158px){
+    .hero-container{
+        background-image: image-set(
+            url(../img/2-hero/desk-hero.webp) 1x,
+            url(../img/2-hero/desk-hero@2x.webp) 2x
+        );
+        padding: 0px 64px;
+        width: 100%;
+        max-width: 1440px;
+        height: 900px;
+    }
+    .hero-title{
+        margin-left: 64px;
+        padding-top: 259px;
+        width: 560px;
+        height: 201px;
+        font-size: 56px;
+    }
+    .hero-text{
+        margin-left: 64px;
+        width: 560px;
+        margin-right: 0px;
+        margin-bottom: 32px;
+        margin-top: 201px;
+
+    }
+    .hero-btn{
+        margin-left: 64px;
+    }
+}
