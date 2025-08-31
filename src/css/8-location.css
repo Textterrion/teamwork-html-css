@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 32px;
 }
 
 .location-svg {
@@ -56,7 +57,6 @@
     align-items: center;
     gap: 8px;
     font-weight: 500;
-    margin-bottom: 32px;
 }
 
 .location-map {
@@ -84,11 +84,15 @@
     .location-container {
         display: flex;
         gap: 24px;
-        justify-content: space-between;
+    }
+
+    .location-title {
+        width: 419px;
     }
 
     .location-address-list {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     .location-address-list-item {
