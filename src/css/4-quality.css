@@ -1,64 +1,114 @@
 .qua-text {
-font-family: "Quicksand", sans-serif;
-font-weight: 600;
-font-size: 16px;
-line-height: 1.5;
-text-align: center;
-color: #0b0803;
-margin-bottom: 16px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0b0803;
+  margin-bottom: 16px;
 }
 
 .qua-title {
-font-family: "Aboreto", sans-serif;
-font-weight: 400;
-font-size: 36px;
-line-height: 1.2;
-letter-spacing: -0.01em;
-text-align: center;
-color: #0b0803;
-margin-bottom: 24px;
+  font-family: "Aboreto", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #0b0803;
+  margin-bottom: 24px;
 }
 
 .qua-text-second {
-font-family: "Quicksand", sans-serif;
-font-weight: 400;
-font-size: 18px;
-line-height: 1.5;
-text-align: center;
-color: #0b0803;
-margin-bottom: 32px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0b0803;
+  margin-bottom: 32px;
 }
 
-.qua-list {  
-display: flex;
-flex-wrap: wrap;
-gap: 24px;
-align-items: center;
-justify-content: center;
+.qua-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
 }
 
 .qua-list-img {
-border-radius: 32px;
-width: 288px;
-height: 164px;
-margin-bottom: 32px;
+  border-radius: 32px;
+  margin-bottom: 32px;
 }
 
 .qua-list-title {
-font-family: "Quicksand", sans-serif;
-font-weight: 600;
-font-size: 20px;
-line-height: 1.5;
-text-align: center;
-color: #0b0803;
-margin-bottom: 8px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0b0803;
+  margin-bottom: 8px;
 }
 
 .qua-list-text {
-font-family: "Quicksand", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-text-align: center;
-color: #0b0803;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0b0803;
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) {
+  .qua-title {
+    width: 452px;
+    height: 86px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .qua-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .qua-list-item {
+    flex: 1 1 45%;
+  }
+  .qua-list-item img {
+    max-width: 100%;
+  }
+  .qua-list-item:last-child {
+    flex: 1 1 100%;
+  }
+  .qua-list-title {
+    width: 284px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .qua-title {
+    font-size: 48px;
+    min-height: 116px;
+    min-width: 768px;
+  }
+  .qua-text-second {
+    height: 81px;
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+  .qua-list-item {
+  flex: 1 1 30%;
+  }
+  .qua-list-item:last-child {
+  flex: 1 1 30%;
+  }
+  .qua-list-title {
+    width: 421px;
+  } 
 }
