@@ -1,31 +1,25 @@
 .qua-text {
-  font-family: "Quicksand", sans-serif;
   font-weight: 600;
   line-height: 1.5;
   font-size: 16px;
   text-align: center;
-  color: #0b0803;
   margin-bottom: 16px;
 }
 
 .qua-title {
-  font-family: "Aboreto", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -0.01em;
   text-align: center;
-  color: #0b0803;
   margin-bottom: 24px;
 }
 
 .qua-text-second {
-  font-family: "Quicksand", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
-  color: #0b0803;
   margin-bottom: 32px;
 }
 
@@ -43,22 +37,19 @@
 }
 
 .qua-list-title {
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--font-family);
   font-weight: 600;
   line-height: 1.5;
   font-size: 20px;
   text-align: center;
-  color: #0b0803;
   margin-bottom: 8px;
 }
 
 .qua-list-text {
-  font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
   line-height: 1.5;
-  color: #0b0803;
 }
 
 /* tablet */
