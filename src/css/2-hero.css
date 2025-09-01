@@ -1,0 +1,58 @@
+#hero{
+    background-image: image-set(
+        url(/img/2-hero/mob-hero.webp) 1x,
+        url(/img/2-hero/mob-hero@2x.webp) 2x
+    );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 108px,0;
+}
+.hero-container{
+    padding: 0 32px;
+}
+.hero-title{
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+}
+.hero-text{
+    color: var(--color-white);
+    margin: 0 auto 32px;
+}
+.hero-btn{
+    width: 135px;
+    font-size: 16px;
+}
+@media screen and (min-width:768px){
+    #hero{
+        background-image: image-set(
+            url(/img/2-hero/tab-hero.webp) 1x,
+            url(/img/2-hero/tab-hero@2x.webp) 2x
+        );
+        padding: 312px 0;
+    }
+
+    .hero-container {
+        padding-right: 176px;
+    }
+
+}
+@media screen and (min-width:1158px){
+    #hero{
+        background-image: image-set(
+            url(/img/2-hero/desk-hero.webp) 1x,
+            url(/img/2-hero/desk-hero@2x.webp) 2x
+        );
+        padding: 259px 0;
+    }
+    .hero-container{
+        padding: 0 816px 0 64px;
+    }
+    .hero-title{
+        font-size: 56px;
+    }
+}
