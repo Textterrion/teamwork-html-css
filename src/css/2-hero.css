@@ -13,15 +13,18 @@
 }
 .hero-title{
     color: var(--color-white);
-    margin-right: auto;
-    margin-left: auto;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
 }
 .hero-text{
     color: var(--color-white);
     margin: 0 auto 32px;
 }
 .hero-btn{
-    min-width: 135px;
+    width: 135px;
     font-size: 16px;
 }
 @media screen and (min-width:768px){
@@ -31,9 +34,7 @@
             url(/img/2-hero/tab-hero@2x.webp) 2x
         );
         padding-top: 112px;
-    }
-    .hero-text{
-        margin-bottom: 32px;
+        padding-right: 176px;
     }
 
 }
@@ -44,14 +45,12 @@
             url(/img/2-hero/desk-hero@2x.webp) 2x
         );
         padding-top: 260px;
+        padding-right: 816px;
     }
     .hero-container{
         padding: 0px 64px;
     }
     .hero-title{
         font-size: 56px;
-    }
-    .hero-text{
-        margin-bottom: 32px;
     }
 }
