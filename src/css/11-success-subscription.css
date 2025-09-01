@@ -12,10 +12,14 @@
   pointer-events: none;
 }
 
-.subscription-open {
+.success.subscription-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+.success.subscription-open .success-container{
+transform: translateY(0);
 }
 
 .success-wrapper {
@@ -39,6 +43,7 @@
   gap: 24px;
   align-items: center;
   justify-content: center;
+  transform: translateY(100%);
 }
 
 .success-close {
