@@ -69,7 +69,7 @@
 }
 
 .success-btn-close {
-  width: 288px;
+  width: 100%;
   font-style: 16px;
 }
 
@@ -108,8 +108,8 @@
   .success-close {
     right: 73px;
   }
-  
-    .success-btn-close {
+
+  .success-btn-close {
     width: 274px;
   }
 }
