@@ -12,7 +12,7 @@
     />
     <title>CoffeeJoy</title>
     <script type="module" crossorigin src="/teamwork-html-css/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/teamwork-html-css/assets/index-C7yS6T94.css">
+    <link rel="stylesheet" crossorigin href="/teamwork-html-css/assets/index-DcaIbvZz.css">
   </head>
 
   <body>
@@ -49,8 +49,10 @@
     <button
       class="header-nav-burger"
       type="button"
+      name="burger"
       data-action="toggle"
       aria-label="Toggle menu"
+      
     >
       <svg width="24" height="24">
         <use href="/teamwork-html-css/assets/icons-CJLpZTv4.svg#icon-menu"></use>
@@ -298,7 +300,7 @@
         <a href="./index.html">
           <img
             class="footer-logo"
-            src="/teamwork-html-css/assets/logo-CpQF2d07.svg"
+            src="/teamwork-html-css/logo.svg"
             alt="CoffeeJoy Logo"
             aria-hidden="true"
             aria-label="Coffeejoy homepage"
@@ -393,9 +395,47 @@
       <use href="/teamwork-html-css/assets/icons-CJLpZTv4.svg#icon-chevron"></use>
     </svg>
   </a>
-    <div class="mobile-menu">
-  <div class="mobile-container">
-    
+    <!--mobile-menu-->
+<div class=" mobile-menu" data-menu data-visible="close">
+  <div class="container mobile-container">
+    <div class="header-container icon-and-button">
+      <a href="./index.html">
+        <img
+          src="/teamwork-html-css/logo.svg"
+          alt="CoffeeJoy Logo"
+          aria-label="Coffeejoy homepage"
+        />
+      </a>
+      <button
+        class="header-nav-burger btn-menu-close"
+        type="button"
+        name="close"
+        data-close
+      >
+        <svg class="" width="24" height="24">
+          <use href="/teamwork-html-css/assets/icons-CJLpZTv4.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a class="nav-list-link" href="#welcome"> About us</a>
+        </li>
+        <li>
+          <a class="nav-list-link" href="#quality"> Benefits</a>
+        </li>
+        <li>
+          <a class="nav-list-link" href="#expirience">Gallery</a>
+        </li>
+        <li>
+          <a class="nav-list-link" href="#testimonials">Testimonial</a>
+        </li>
+        <li>
+          <a class="nav-list-link" href="#location">Location</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </div>
 
