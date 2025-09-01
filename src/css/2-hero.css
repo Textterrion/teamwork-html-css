@@ -6,7 +6,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 108px,0px;
+    padding: 108px,0;
 }
 .hero-container{
     padding: 0 32px;
@@ -33,7 +33,9 @@
             url(/img/2-hero/tab-hero.webp) 1x,
             url(/img/2-hero/tab-hero@2x.webp) 2x
         );
-        padding-top: 112px;
+        padding: 312px 0;
+    }
+    .hero-container{
         padding-right: 176px;
     }
 
@@ -44,11 +46,10 @@
             url(/img/2-hero/desk-hero.webp) 1x,
             url(/img/2-hero/desk-hero@2x.webp) 2x
         );
-        padding-top: 260px;
-        padding-right: 816px;
+        padding: 259 0;
     }
     .hero-container{
-        padding: 0px 64px;
+        padding: 0 816px 0 64px;
     }
     .hero-title{
         font-size: 56px;
