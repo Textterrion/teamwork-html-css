@@ -1,13 +1,23 @@
-.welcome-contant {
+.welcome-content {
     display: flex;
     flex-direction: column;
+    gap: 32px;
     align-items: center;
     justify-content: center;
     max-width: 288px;
+    margin-bottom: 32px;
 }
 
-.welcome-keyword {
-    margin-bottom: 16px;
+.content-left{
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.content-right{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .welcome-title {
@@ -15,7 +25,6 @@
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: -0.01em;
-    margin-bottom: 32px;
 }
 
 
@@ -23,35 +32,33 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
-    margin-bottom: 32px;
     
 }
 
-.btn {
-    width: 288px;
-    height: 44px;
-    margin-bottom: 32px;
+.welcome-btn{
+    width: 100%
 }
 
 .btn-text{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    color: #fff;
+    color: var(--color-white);
     margin-right: 12px;
 }
 
 .welcome-icons {
-    fill: #fff;
+    fill: var(--color-white);
 }
 
 .welcome-picture img {
     max-width: 288px;
     border-radius: 40px;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
-    .welcome-contant {
+    .welcome-content {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
@@ -59,16 +66,16 @@
         max-width: 704px;
     }
 
-    .btn {
+    .welcome-btn {
         max-width: 181px;
     }
 
 
-    .contant-left {
+    .content-left {
         max-width: 336px;
     }
 
-    .contant-right {
+    .content-right {
         max-width: 336px;
     }
 
@@ -77,16 +84,17 @@
     }
 }
 
-@media screen and (min-width: 1140рх) {
-    .welcome-contant {
+@media screen and (min-width: 1440px) {
+    .welcome-content {
         max-width: 1312px;
+        margin-bottom: 80px;
     }
 
-    .contant-left {
+    .content-left {
         max-width: 640px;
     }
 
-    .contant-right {
+    .content-right {
         max-width: 640px;
     }
 
