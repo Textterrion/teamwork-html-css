@@ -1,6 +1,6 @@
 <!--mobile-menu-->
-<div class="mobile-menu">
-  <div class="mobile-container">
+<div class=" mobile-menu" data-menu data-visible="close">
+  <div class="container mobile-container">
     <div class="header-container icon-and-button">
       <a href="./index.html">
         <img
@@ -9,28 +9,33 @@
           aria-label="Coffeejoy homepage"
         />
       </a>
-      <button class="header-nav-burger btn-menu-close">
+      <button
+        class="header-nav-burger btn-menu-close"
+        type="button"
+        name="close"
+        data-close
+      >
         <svg class="" width="24" height="24">
           <use href="/img/icons.svg#icon-close"></use>
         </svg>
       </button>
     </div>
-    <nav class="nav-menu">
-      <ul class="nav-link">
-        <li class="nav-list-menu">
-          <a href="#welcome"> About us</a>
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a class="nav-list-link" href="#welcome"> About us</a>
         </li>
-        <li class="nav-list-menu">
-          <a href="#quality"> Benefits</a>
+        <li>
+          <a class="nav-list-link" href="#quality"> Benefits</a>
         </li>
-        <li class="nav-list-menu">
-          <a href="#expirience">Gallery</a>
+        <li>
+          <a class="nav-list-link" href="#expirience">Gallery</a>
         </li>
-        <li class="nav-list-menu">
-          <a href="#testimonials">Testimonial</a>
+        <li>
+          <a class="nav-list-link" href="#testimonials">Testimonial</a>
         </li>
-        <li class="nav-list-menu">
-          <a href="#location">Location</a>
+        <li>
+          <a class="nav-list-link" href="#location">Location</a>
         </li>
       </ul>
     </nav>
