@@ -23,14 +23,7 @@ input[type="radio"] {
     display: flex;
     gap: 24px;
     transition: transform 0.4s ease;
-    /* overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none; */
 }
-
-/* .testimonials-reviews-list::-webkit-scrollbar {
-    display: none;
-} */
 
 .testimonials-reviews-list-item {
     flex: 0 0 100%;
