@@ -26,7 +26,6 @@ body {
     flex-wrap: wrap;
     gap: 24px;
     padding: 0 64px;
-    margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
 }
@@ -34,7 +33,7 @@ body {
 .container-text {
     flex: 0 1 310px;
     background-color: #C29D84;
-    border-radius: 16px;
+    border-radius: 24px;
     padding: 24px;
     position: relative;
     box-sizing: border-box;
@@ -42,6 +41,11 @@ body {
     min-height: 303.39px;
 }
 
+.star-outline {
+    fill: none;
+    stroke-width: 1px;
+    stroke: var(--color-scheme-1-text);
+}
 .text-testimonals {
     font-size: 18px;
     line-height: 150%;
@@ -51,7 +55,7 @@ body {
 
 .testimonial-name {
     position: absolute;
-    bottom: 16px;
+    bottom: 32px;
     left: 24px;
     font-weight: 600;
     font-size: 16px;
