@@ -1,5 +1,6 @@
 .qua-text {
   font-size: 16px;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -23,9 +24,12 @@
   flex-direction: column;
   gap: 24px;
   align-items: center;
-  justify-content: center;
 }
-
+.qua-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .qua-list-img {
   border-radius: 32px;
   margin-bottom: 32px;
@@ -35,38 +39,41 @@
 .qua-list-title {
   font-family: var(--font-family);
   font-weight: 600;
-  line-height: 1.5;
   font-size: 20px;
   text-align: center;
   margin-bottom: 8px;
 }
 
 .qua-list-text {
+  text-align: center;
+  font-size: 16px;
 }
 
 /* tablet */
 
 @media screen and (min-width: 768px) {
   .qua-title {
-    margin: 0 auto;
+    max-width: 452px;
+    margin: 0 auto 24px;
   }
   .qua-list {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-  justify-content: center;
-  } 
+    justify-content: space-between;
+  }
   .qua-list-title {
-    width: 284px;
-    margin: 0 auto;
+    max-width: 284px;
     margin-bottom: 8px;
   }
   .qua-list-item {
-    flex-basis: calc(( 100% - 24px ) / 2 );
+    flex-basis: calc((100% - 24px) / 2);
   }
   .qua-list-item:last-child {
     flex-basis: 100%;
+  }
+  .qua-list-item:last-child .qua-list-text {
+    max-width: 440px;
   }
   .qua-list-text {
     max-width: 292px;
@@ -76,19 +83,22 @@
 @media screen and (min-width: 1440px) {
   .qua-title {
     font-size: 48px;
-    min-width: 768px;
+    max-width: 768px;
   }
   .qua-text-second {
     max-width: 768px;
-    margin-bottom: 32px;
+    margin: 0 auto 32px;
   }
-  .qua-list-item {
-    flex: 1 1 30%;
+  .qua-list {
+    align-items: start;
   }
+  .qua-list-item,
   .qua-list-item:last-child {
-    flex: 1 1 30%;
+    flex-basis: calc((100% - 48px) / 3);
   }
-  .qua-list-title {
+  .qua-list-title,
+  .qua-list-text,
+  .qua-list-item:last-child .qua-list-text {
     max-width: 421px;
   }
 }
