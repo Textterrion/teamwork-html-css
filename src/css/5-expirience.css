@@ -79,21 +79,20 @@
     max-height: 948px;
     gap: 32px;
   }
-}
+  .exp-list li {
+    min-width: none;
+    max-width: none;
+    width: 416px;
+  }
 
-.exp-list li {
-  min-width: none;
-  max-width: none;
-  width: 416px;
-}
+  .exp-list li:nth-child(3),
+  .exp-list li:nth-child(4) {
+    min-width: 416px;
+    min-height: 234px;
+  }
 
-.exp-list li:nth-child(3),
-.exp-list li:nth-child(4) {
-  min-width: 416px;
-  min-height: 234px;
-}
-
-.exp-list li:nth-child(7) {
-  width: 100%;
-  min-width: 416px;
+  .exp-list li:nth-child(7) {
+    width: 100%;
+    min-width: 416px;
+  }
 }
