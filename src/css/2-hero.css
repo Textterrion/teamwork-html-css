@@ -11,7 +11,8 @@
 .hero-container {
   padding: 0 32px;
 }
-.hero-title {
+
+h1 {
   color: var(--color-white);
   font-weight: 400;
   font-size: 40px;
