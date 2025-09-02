@@ -1,25 +1,18 @@
-.expirience-content {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.exp-title {
   text-align: center;
-  margin-bottom: 32px;
-}
-
-.expirience-title {
   font-weight: 400;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
+  margin-bottom: 24px;
 }
 
-.experiences-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
+.exp-title ~ p {
+  text-align: center;
+  margin-bottom: 32px;
 }
 
-.expirience-images {
+.exp-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -30,7 +23,80 @@
   overflow: hidden;
 }
 
+/* .exp-list li {
+  max-width: 343px;
+  min-width: 288px;
+  width: 100%;
+}
+
+.exp-list li:nth-child(3),
+.exp-list li:nth-child(4) {
+  max-width: 343px;
+  min-width: 288px;
+  max-height: 193px;
+  min-height: 162px;
+  height: 100%;
+  width: 100%;
+}
+
+.exp-list li:nth-child(7) {
+  min-width: 288px;
+  max-width: 343px;
+  width: 100%;
+  min-height: 391px;
+  max-height: 466px;
+  height: 100%;
+} */
+
 @media screen and (min-width: 768px) {
+  .exp-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  /* 
+  .exp-list li {
+    min-width: none;
+    max-width: none;
+    width: 336px;
+  }
+
+  .exp-list li:nth-child(3),
+  .exp-list li:nth-child(4) {
+    width: 336px;
+    height: 189px;
+  }
+
+  .exp-list li:nth-child(7) {
+    width: 704px;
+    height: 391px;
+  } */
+}
+
+@media screen and (min-width: 1440px) {
+  .exp-list {
+    flex-direction: column;
+    width: 416px;
+  }
+  /* 
+  .exp-list li {
+    min-width: none;
+    max-width: none;
+    width: 416px;
+  }
+
+  .exp-list li:nth-child(3),
+  .exp-list li:nth-child(4) {
+    width: 416px;
+    height: 334px;
+  }
+
+  .exp-list li:nth-child(7) {
+    width: 416px;
+  } */
+}
+
+/* @media screen and (min-width: 768px) {
   .expirience-images {
     flex-direction: row;
     flex-wrap: wrap;
@@ -54,9 +120,9 @@
     height: 100%;
     object-fit: cover;
   }
-}
+} */
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .expirience-images {
     display: grid;
     grid-template-columns: 416px 416px 416px;
@@ -113,4 +179,4 @@
   .expirience-images picture img {
     object-fit: cover;
   }
-}
+} */
