@@ -30,6 +30,10 @@ body {
     box-sizing: border-box;
 }
 
+.rating-list {
+    display: flex;
+}
+
 .container-text {
     flex: 0 1 310px;
     background-color: #C29D84;
