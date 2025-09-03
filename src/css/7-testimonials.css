@@ -160,6 +160,10 @@ input[type="radio"] {
     #m7:checked~.testimonials-card-list .patricia {
         display: flex;
     }
+    #m8:checked~.testimonials-card-list .chris,
+    #m8:checked~.testimonials-card-list .patricia {
+        display: flex;
+        }
 }
 
 @media (min-width: 1440px) {
@@ -212,4 +216,18 @@ input[type="radio"] {
     #m5:checked~.testimonials-card-list .patricia {
         display: flex;
     }
+        #m6:checked~.testimonials-card-list .james,
+        #m6:checked~.testimonials-card-list .sarah,
+        #m6:checked~.testimonials-card-list .chris,
+        #m6:checked~.testimonials-card-list .patricia,
+        #m7:checked~.testimonials-card-list .james,
+        #m7:checked~.testimonials-card-list .sarah,
+        #m7:checked~.testimonials-card-list .chris,
+        #m7:checked~.testimonials-card-list .patricia,
+        #m8:checked~.testimonials-card-list .james,
+        #m8:checked~.testimonials-card-list .sarah,
+        #m8:checked~.testimonials-card-list .chris,
+        #m8:checked~.testimonials-card-list .patricia {
+            display: flex;
+        }
 }
