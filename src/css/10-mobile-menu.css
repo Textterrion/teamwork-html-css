@@ -13,11 +13,11 @@
   transform: translateX(100%);
   margin: 0 auto;
 }
-[data-menu][data-visible="open"] .mobile-container {
+.mobile-menu.is-open .mobile-container {
   transform: translateX(0);
 }
 
-[data-menu][data-visible="open"] {
+.mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;

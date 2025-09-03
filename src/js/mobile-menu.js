@@ -1,43 +1,27 @@
-const refs = {
-  mobMenu: document.querySelector("[data-menu]"),
-  burgerBtn: document.querySelector('[data-action="toggle"]'),
-  closeIcon: document.querySelector("[data-close]"),
-  body: document.body,
-};
-
-let isAnimationInProgress = false;
-
-const toggleMobMenu = (open) => {
-  if (isAnimationInProgress) return;
-
-  isAnimationInProgress = true;
-
-  // Відкриття / закриття меню
-  refs.mobMenu.dataset.visible = open ? "open" : "close";
-  refs.body.dataset.scroll = open ? "lock" : "allow";
-
-  const onTransitionEnd = (event) => {
-    if (event.target === refs.mobMenu) {
-      isAnimationInProgress = false;
-      refs.mobMenu.removeEventListener("transitionend", onTransitionEnd);
-    }
+(() => {
+  const refs = {
+    // Додати атрибут data-modal-open на кнопку відкриття
+    openModalBtn: document.querySelector("[data-menu-open]"),
+    // Додати атрибут data-modal-close на кнопку закриття
+    closeModalBtn: document.querySelector("[data-menu-close]"),
+    // Додати атрибут data-modal на бекдроп модалки
+    modal: document.querySelector("[data-menu]"),
+    // Отримуємо всі посилання у модальному вікні
+    menuLinks: document.querySelectorAll('[data-menu] a[href^="#"]'),
   };
 
-  refs.mobMenu.addEventListener("transitionend", onTransitionEnd);
-};
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
 
-// Клік по кнопці бургер/хрестик
-refs.burgerBtn.addEventListener("click", () => {
-  const isOpen = refs.mobMenu.dataset.visible === "open";
-  toggleMobMenu(!isOpen);
-});
-refs.closeIcon.addEventListener("click", () => {
-  toggleMobMenu(false);
-});
+  // Додаємо обробник кліку для кожного посилання
+  refs.menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      refs.modal.classList.remove("is-open"); // Закриваємо модальне вікно
+    });
+  });
 
-// Закриття по кліку на посилання або на фон
-refs.mobMenu.addEventListener("click", (e) => {
-  if (e.target.matches(".nav-list-link") || e.target === refs.mobMenu) {
-    toggleMobMenu(false);
+  function toggleModal() {
+    // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
+    refs.modal.classList.toggle("is-open");
   }
-});
+})();
