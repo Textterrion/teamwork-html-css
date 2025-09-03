@@ -1,5 +1,65 @@
 <section class="section" id="subscribe">
-  <div class="container subscribe-container">
+  <div class="container newsletter-container">
+    <div class="newsletter-content">
+      <div class="text-section">
+        <h2 class="newsletter-heading">Join Our Coffee Community</h2>
+        <p class="newsletter-description">
+          Experience the joy of coffee delivered right to your door. Sign up
+          today!
+        </p>
 
+        <form class="form">
+          <input
+            class="email-input"
+            type="email"
+            placeholder="Your Email Here"
+            id="email"
+            name="email"
+            required
+          />
+          <button type="submit" class="submit-button btn">
+            Subscribe
+            <svg class="arrow-icon" width="24" height="24">
+              <use href="../img/icons.svg#icon-chevron"></use>
+            </svg>
+          </button>
+        </form>
+
+        <p class="newsletter-footer">
+          By clicking Get Started, you agree to our
+          <a href="#">Terms and Conditions</a>.
+        </p>
+      </div>
+
+      <div class="newsletter-image">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="../img/6-subscribe/mob-subscribe.webp"
+          />
+          <source
+            media="(min-width: 768px) and (max-widthAgit add kode.txt 1157px)"
+            srcset="
+              ../img/6-subscribe/tab-subscribe.webp,
+              ../img/6-subscribe/tab-subscribe@2x.webp 2x
+            "
+          />
+          <source
+            media="(min-width: 1158px)"
+            srcset="
+              ../img/6-subscribe/desk-subscribe.webp,
+              ../img/6-subscribe/desk-subscribe@2x.webp 2x
+            "
+          />
+          <img
+            src="../img/6-subscribe/desk-subscribe.webp"
+            alt="People working and enjoying coffee"
+            width="640"
+            height="400"
+            srcset="../img/6-subscribe/desk-subscribe@2x.webp"
+          />
+        </picture>
+      </div>
+    </div>
   </div>
 </section>
