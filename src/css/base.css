@@ -99,6 +99,8 @@ h1 {
   justify-content: center;
   border-radius: 100px;
   min-height: 44px;
+  font-weight: 500;
+  font-size: 16px;
 }
 .btn:hover,
 .btn:focus {
@@ -113,14 +115,18 @@ h1 {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  min-height: 40px;
+  height: 40px;
   border: 1px solid var(--opacity-neutral-darkest-15);
   background: var(--opacity-transparent);
   font-size: 16px;
   color: var(--color-scheme-2-text);
+  width: 100%;
+  padding-left: 12px;
+  font-family: var(--font-family);
 }
 
 .input-subscribe::placeholder {
+  font-family: var(--font-family);
   font-size: 16px;
   color: var(--opacity-neutral-darkest-60);
 }
@@ -129,11 +135,29 @@ h1 {
 .input-subscribe:focus,
 .input-subscribe:active {
   outline: none;
+  background-color: transparent;
 }
 
 .input-subscribe::placeholder:hover,
 .input-subscribe::placeholder:focus {
   color: var(--color-scheme-2-text);
+}
+.input-subscribe:valid {
+  border-color: var(--opacity-neutral-darkest-15);
+
+}
+.input-subscribe:invalid:not(:focus):not(:placeholder-shown) {
+  color: var(--color-error-red);
+  border: 1px solid var(--color-error-red);
+}
+.error-text {
+  display: none;
+  font-family: var(--font-family);
+  font-size: 12px;
+  color: var(--color-error-red);
+}
+.input-subscribe:invalid:not(:focus):not(:placeholder-shown)+.error-text {
+  display: block;
 }
 
 .link {

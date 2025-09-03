@@ -1,5 +1,67 @@
 <section class="section" id="subscribe">
-  <div class="container subscribe-container">
+  <div class="container newsletter-container">
+    <div class="subscribe-content">
+      <h2 class="newsletter-heading">Join Our Coffee Community</h2>
+      <p class="newsletter-description">
+        Experience the joy of coffee delivered right to your door. Sign up
+        today!
+      </p>
 
+      <form class="form">
+        <div>
+          <input
+            class="input-subscribe email-input"
+            type="email"
+            placeholder="Your Email Here"
+            id="email"
+            name="email"
+            required
+            autocomplete="email"
+            aria-label="Email for newsletter subscription"
+          />
+          <label class="error-text" for="email">Error Text</label>
+        </div>
+        <button type="submit" class="btn submit-button">
+          Subscribe
+          <svg width="24" height="24">
+            <use href="/img/icons.svg#icon-chevron"></use>
+          </svg>
+        </button>
+      </form>
+      <p class="newsletter-postscript">
+        By clicking Get Started, you agree to our Terms and Conditions.
+      </p>
+    </div>
+
+    <picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          /img/6-subscribe/desk-subscribe.webp,
+          /img/6-subscribe/desk-subscribe@2x.webp 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /img/6-subscribe/tab-subscribe.webp,
+          /img/6-subscribe/tab-subscribe@2x.webp 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /img/6-subscribe/mob-subscribe.webp,
+          /img/6-subscribe/mob-subscribe@2x.webp 2x
+        "
+      />
+      <img
+        class="newsletter-image"
+        src="/img/6-subscribe/mob-subscribe.webp"
+        alt="People working and enjoying coffee"
+        width="640"
+        height="400"
+      />
+    </picture>
   </div>
 </section>
