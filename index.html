@@ -15,7 +15,7 @@
     <meta name="description" content="CoffeeJoy - Experience the finest coffee crafted with passion and dedication." />
     <meta name="keywords" content="coffee, specialty coffee, coffee shop, artisan coffee, coffee experience" />
     <script type="module" crossorigin src="/teamwork-html-css/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/teamwork-html-css/assets/index-DvO_q9XA.css">
+    <link rel="stylesheet" crossorigin href="/teamwork-html-css/assets/index-DOBFpUZX.css">
   </head>
 
   <body>
@@ -53,7 +53,7 @@
       class="header-nav-burger"
       type="button"
       name="burger"
-      data-action="toggle"
+      data-menu-open
       aria-label="Toggle menu"
       
     >
@@ -406,7 +406,7 @@
         today!
       </p>
 
-      <form class="form" id="subscribe-form" action="subscribe" method="POST">
+      <form class="form" id="subscribe-form" action="subscribe" method="POST" data-modal-form>
         <div>
           <input
             class="input-subscribe email-input"
@@ -948,7 +948,7 @@
     </svg>
   </a>
     <!--mobile-menu-->
-<div class=" mobile-menu" data-menu data-visible="close">
+<div class=" mobile-menu" data-menu>
   <div class="container mobile-container">
     <div class="header-container icon-and-button">
       <a href="./index.html">
@@ -962,7 +962,7 @@
         class="header-nav-burger btn-menu-close" 
         type="button"
         name="close" aria-label="Close mobile menu"
-        data-close
+       data-menu-close
       >
         <svg class="" width="24" height="24">
           <use href="/teamwork-html-css/assets/icons-CJLpZTv4.svg#icon-close"></use>
@@ -991,10 +991,10 @@
   </div>
 </div>
 
-    <div class="success">
+    <div class="success" data-modal>
   <div class="container success-wrapper">
     <div class="success-container">
-      <button type="button" class="success-close">
+      <button type="button" class="success-close" data-modal-close>
         <svg width="32" height="32">
           <use href="/teamwork-html-css/assets/icons-CJLpZTv4.svg#icon-close"></use>
         </svg>
@@ -1022,7 +1022,9 @@
           alt="Generate a soft, friendly illustration or photo-style image representing email subscription success for a coffee brand. Show a steaming coffee cup next to an envelope with a small heart or coffee bean seal, placed on a wooden table or neutral background. Soft natural lighting, warm beige and brown tones. Add subtle props like a small plant, napkin, or croissant to create a cozy mood. No text on the image. Keep the composition light and welcoming, suitable for use in a small modal window."
         />
       </picture>
-      <button type="button" class="btn success-btn-close">Close</button>
+      <button type="button" class="btn success-btn-close" data-modal-close>
+        Close
+      </button>
     </div>
   </div>
 </div>
