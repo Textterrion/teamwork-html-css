@@ -32,7 +32,6 @@
 }
 .qua-list-img {
   border-radius: 32px;
-  margin-bottom: 32px;
   overflow: hidden;
 }
 
@@ -41,6 +40,7 @@
   font-weight: 600;
   font-size: 20px;
   text-align: center;
+  margin-top: 32px;
   margin-bottom: 8px;
 }
 
