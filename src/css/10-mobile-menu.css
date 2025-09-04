@@ -9,11 +9,10 @@
   pointer-events: none;
   background-color: var(--color-scheme-1-background);
 }
-.mobile-container {
+.nav-list {
   transform: translateX(100%);
-  margin: 0 auto;
 }
-.mobile-menu.is-open .mobile-container {
+.mobile-menu.is-open .nav-list {
   transform: translateX(0);
 }
 

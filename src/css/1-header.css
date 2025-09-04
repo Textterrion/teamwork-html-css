@@ -1,5 +1,6 @@
 .header-container {
-  padding: 12px 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   display: flex;
   align-items: center;
