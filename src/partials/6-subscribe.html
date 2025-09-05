@@ -1,66 +1,70 @@
 <section class="section" id="subscribe">
   <div class="container subscribe-container">
     <div class="subscribe-up-text">
-      <h1 class="subscribe-titel">Join Our Coffee Community</h1>
+      <h2 class="subscribe-titel">Join Our Coffee Community</h2>
       <p class="subscribe-text">
         Experience the joy of coffee delivered right to your door. Sign up
         today!
       </p>
-    </div>
-    <div class="subscribe-form-conteiner">
-      <form class="form-class" action="#" method="post">
+   <div class="subscribe-form-conteiner">
+      <form class="input-subscribe" action="#" method="post">
         <!-- fild for e-mail -->
-        <label class="label-class">
+        <label class="label-class" for="email">Error text</label>
           <input
-            class="input-class"
+            class="input-class email-input"
             type="email"
             name="email-field"
             placeholder="Your Email Here"
+            autocomplete="email"
             required
           />
         </label>
+      </div>
 
         <button class="btn btn-subscribe" type="submit">
           Subscribe
           <!-- SVG icon in button -->
           <svg class="icon-class" width="24" height="24">
-            <use href="./images/icons.svg#icon-btn-icon"></use>
+            <use href="/src/img/icons.svg#icon-chevron-right"></use>
           </svg>
         </button>
       </form>
+    
+    <p class="note-subscribe">
+      By clicking Get Started, you agree to our Terms and Conditions.
+    </p>
     </div>
-    <p>By clicking Get Started, you agree to our Terms and Conditions.</p>
-  </div>
+  
+    <picture class="subscribe-picture">
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          /src/img/6-subscribe/desk-subscribe.webp    1x,
+          /src/img/6-subscribe/desk-subscribe@2x.webp 2x
+        "
+      />
 
-  <picture class="subscribe-picture">
-    <source
-      media="(min-width: 1440px)"
-      srcset="
-        /src/img/6-subscribe/desk-subscribe.webp    1x,
-        /src/img/6-subscribe/desk-subscribe@2x.webp 2x
-      "
-    />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /src/img/6-subscribe/tab-subscribe.webp    1x,
+          /src/img/6-subscribe/tab-subscribe@2x.webp 2x
+        "
+      />
 
-    <source
-      media="(min-width: 768px)"
-      srcset="
-        /src/img/6-subscribe/tab-subscribe.webp    1x,
-        /src/img/6-subscribe/tab-subscribe@2x.webp 2x
-      "
-    />
-
-    <source
-      media="(max-width: 767px)"
-      srcset="
-        /src/img/6-subscribe/mob-subscribe.webp    1x,
-        /src/img/6-subscribe/mob-subscribe@2x.webp 2x
-      "
-    />
-    <img
-      src="/src/img/6-subscribe/desk-subscribe.webp"
-      loading="lazy"
-      decoding="async"
-      alt="illustration office vibe"
-    />
-  </picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /src/img/6-subscribe/mob-subscribe.webp    1x,
+          /src/img/6-subscribe/mob-subscribe@2x.webp 2x
+        "
+      />
+      <img class="subscribe-img"
+        src="/src/img/6-subscribe/desk-subscribe.webp"
+        loading="lazy"
+        decoding="async"
+        alt="illustration office vibe"
+      />
+    </picture>
+</div>
 </section>
